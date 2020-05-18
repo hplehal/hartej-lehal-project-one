@@ -327,13 +327,7 @@ img {
   White - #FFFFFF
  */
 
-body {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 29px;
-  color: #ffffff;
-}
+
 
 .skip-link {
   position: absolute;
@@ -354,6 +348,14 @@ body {
   max-width: 1200px;
 } */
 
+/* Global */
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 29px;
+  color: #ffffff;
+}
+
 h1,
 h2,
 h4 {
@@ -368,6 +370,11 @@ h2 {
   line-height: 50px;
 }
 
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
 ul {
   margin: 0px 100px;
 }
@@ -379,15 +386,43 @@ a {
   color: #ffffff;
 }
 
+section:nth-child(odd) {
+  background-color: #14171f;
+}
+
+section:nth-child(even) {
+  background-color: #201e21;
+}
+
+.read-more {
+  border: #faba63 solid 2px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 21px;
+  font-family: "Italiana", serif;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-top: 25px;
+}
+
+.read-more:hover, .read-more:focus {
+  border: #ffffff solid 2px;
+  color: #faba63;
+}
+
+/* Header */
+
 header {
   background-image: url(assets/header-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
+
 nav {
   margin: 0 20px;
 }
+
 nav li {
   display: inline-block;
   padding: 25px;
@@ -427,12 +462,6 @@ i.hamburger.fas.fa-bars:hover i.hamburger.fas.fa-bars:focus{
  color: #faba63;
 }
 
-section:nth-child(odd) {
-  background-color: #14171f;
-}
-section:nth-child(even) {
-  background-color: #201e21;
-}
 .header-title {
   margin: 150px 250px;
 }
@@ -445,7 +474,7 @@ section:nth-child(even) {
   content: '-';
 }
 
-h1 span {
+.header-title h1 span {
   position: absolute;
   top: 350px;
   left: 500px;
@@ -457,6 +486,8 @@ h1 span {
   color: #faba63;
   margin: 130px 280px;
 }
+
+/* About Section */
 .about-section {
   padding: 8%;
 }
@@ -469,6 +500,8 @@ h1 span {
   padding-left: 50px;
   float: left;
 }
+
+/* Collection Section */
 .collections-section {
   text-align: center;
   padding: 100px 150px;
@@ -482,6 +515,7 @@ h1 span {
   padding: 2%;
   float: left;
 }
+
 /* Icon Section */
 .icons-section {
   padding: 25px 0;
@@ -511,21 +545,7 @@ h1 span {
   float: left;
   margin: 50px ;
 }
-.read-more {
-  border: #faba63 solid 2px;
-  background: transparent;
-  color: white;
-  font-size: 21px;
-  font-family: "Italiana", serif;
-  text-transform: uppercase;
-  padding: 5px;
-  margin-top: 25px;
-}
 
-.read-more:hover, .read-more:focus {
-  border: #ffffff solid 2px;
-  color: #faba63;
-}
 .blog img {
   width: 50%;
   float: left;
@@ -539,6 +559,7 @@ h1 span {
   float: left;
 }
 
+/* Contact Footer Section */
 .contact-section {
   margin: 0 auto;
   padding: 50px 100px;
@@ -581,6 +602,8 @@ input[type=submit] {
   color: white;
   padding: 15px 50px;
 }
+
+/* Footer */
 footer {
   background-color: black;
   color: white;
@@ -589,7 +612,7 @@ footer {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 1200px) {
-  body {
+  p {
     font-size: 16px;
   }
 }
@@ -598,6 +621,38 @@ footer {
 @media (max-width: 883px) {
   header {
     background-image: url(assets/header-1.jpg);
+  }
+
+  .header-title {
+    margin: 190px 105px;
+  }
+  .header-title h1 {
+    font-size: 125px;
+    line-height: 34.4px;
+  }
+
+  .header-title h1 span {
+    top: 365px;
+    left: 302px;
+  }
+
+  .header-title h3 {
+    font-size: 30px;
+    margin: 130px 230px;
+  }
+  /* About Section */
+  .about-image img {
+    width: 100%;
+    float: none;
+  }
+
+  .about-content {
+    width: 100%;
+    padding-left: 0;
+    float: none;
+  }
+  .read-more {
+    margin: 25px 90px;
   }
 
   /* Blog Section */
@@ -621,6 +676,43 @@ footer {
   }
 }
 
+@media (max-width: 765px) {
+  i.hamburger.fas.fa-bars {
+    display: block;
+    font-size: 50px;
+    float: right;
+    padding: 7% 0;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .social-media-icons {
+    display: none;
+  }
+
+  .header-title {
+    margin: 190px 55px;
+  }
+  .header-title h1 {
+    font-size: 95px;
+    line-height: 0.4px;
+  }
+
+  .header-title h1 span {
+    top: 410px;
+    left: 210px;
+  }
+
+  .header-title h3 {
+    font-size: 30px;
+    margin: 120px 155px;
+  }
+
+
+
+}
+
 /* Landscape phones and down */
 @media (max-width: 500px) {
 
@@ -640,54 +732,25 @@ footer {
     display: inline-block;
   } 
 
-  nav ul {
-    display: none;
-  }
-
-  i.hamburger.fas.fa-bars {
-    display: block;
-    font-size: 50px;
-    float: right;
-    padding: 7% 0;
-  }
-
-  .social-media-icons {
-    display: none;
-  }
-
   .header-title {
     margin: 150px 0;
     width: 65%;
   }
   .header-title h1 {
     font-size: 80px;
-    line-height: 0.4px;
   }
 
-  h1 span {
-    position: absolute; 
-    left: 149px;
+  .header-title h1 span {
     top: 312px;
+    left: 149px;
   }
+
   .header-title h3 {
     font-size: 30px;
     margin: 90px 135px;
   }
-
-  .about-image img {
-    width: 100%;
-    float: none;
-  }
-
-  .about-content {
-    width: 100%;
-    padding-left: 0;
-    float: none;
-  }
-  .read-more {
-    margin: 25px 90px;
-  }
-
+  
+  /* Collection Section */
   .collections-section {
     padding: 0;
   }
