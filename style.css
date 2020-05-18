@@ -387,8 +387,16 @@ nav li a {
   color: #faba63;
 }
 
+nav li a:hover, nav li a:focus {
+  color: #ffffff;
+}
+
 i.hamburger.fas.fa-bars{
   display: none;
+}
+
+i.hamburger.fas.fa-bars:hover i.hamburger.fas.fa-bars:focus{
+  color: #faba63;
 }
 
 .social-media-icons{
@@ -402,6 +410,10 @@ i.hamburger.fas.fa-bars{
   font-size: 25px;
   padding-bottom:25px;
 }
+.social-media-icons i:hover, .social-media-icons i:focus{
+ color: #faba63;
+}
+
 section:nth-child(odd) {
   background-color: #14171f;
 }
@@ -490,12 +502,17 @@ h1 span {
   border: #faba63 solid 2px;
   background: transparent;
   color: white;
-  font-size: 25px;
+  font-size: 21px;
   font-family: "Italiana", serif;
   text-transform: uppercase;
+  padding: 5px;
   margin-top: 25px;
 }
 
+.read-more:hover, .read-more:focus {
+  border: #ffffff solid 2px;
+  color: #faba63;
+}
 .blog img {
   width: 50%;
   float: left;
@@ -521,6 +538,10 @@ h1 span {
 .list {
   float: left;
   width: 30%;
+}
+
+.list li a:hover,.list li a:focus  {
+  color: #faba63
 }
 
 .subscribe-form {
