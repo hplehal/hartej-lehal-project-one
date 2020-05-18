@@ -320,14 +320,13 @@ img {
 }
 
 /* Code Starts Here */
+
 /* Colors 
   Dark - #201E21 
   Dark Two - #14171F
   Apricot - #FABA63
   White - #FFFFFF
  */
-
-
 
 .skip-link {
   position: absolute;
@@ -346,21 +345,10 @@ img {
   background: #000000;
 }
 
-/* .wrapper:nth-child(odd) {
-  background-color: #14171f;
-}
-
-.wrapper:nth-child(even) {
-  background-color: #201e21;
-} */
-
-
 .main-wrapper {
   max-width: 1600px;
   margin: 0 auto;
 }
-
-
 
 /* Global */
 
