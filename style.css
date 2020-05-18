@@ -335,6 +335,19 @@ body {
   color: #ffffff;
 }
 
+.skip-link {
+  position: absolute;
+  left:-10000px;
+  top: 5px;
+  z-index: 999;
+  background: #201E21;
+  color: #ffffff;
+}
+/* won't work if I tab */
+.skip-link:focus {
+  left: 23;
+}
+
 /* .wrapper {
   width: 100%;
   margin: 0 auto;
